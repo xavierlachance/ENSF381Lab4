@@ -1,5 +1,5 @@
 # ENSF381Lab4
-
+# Project Overview
 ## Team Members
 |     Name      |
 |---------------|
@@ -7,8 +7,8 @@
 |Rongtao Zhu    |
 
 ## Screenshots
-### Screenshot1
+### Screenshot B
 ![Exercise B final output](./ExerciseB.gif)
 
-### Screenshot2
+### Screenshot C
 ![Exercise C final output](./ExerciseC.gif)
