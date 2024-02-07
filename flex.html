@@ -69,19 +69,27 @@ Description : Flex Layouts.
         img { max-width: 100%; height: auto; }
         .container { 
 			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: column;
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
 			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: row;
 		}
         .main { 
 			padding: 15px; 
 			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: column;
 		}
         
         .news-item { padding: 10px; }
         .row { 
 			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: row;
 		}
         
 
@@ -89,29 +97,50 @@ Description : Flex Layouts.
             .menu { width: 150px; }     
 			.large { 
 				/*I need some CSS codes.*/
+				width: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
+				width: 70%;
 			}
 			.small { 
 				/*I need some CSS codes.*/
+				width: 30%;
 			 }       
         }
 
         @media screen and (max-width: 768px) {
 			.body { 
 				/*I need some CSS codes.*/
+				flex-direction: column;
 			}
             .menu ul { 
 				/*I need some CSS codes.*/
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
 			 }            
             /*I need some CSS codes.*/
+			.large { 
+				/*I need some CSS codes.*/
+				width: 100%;
+			}
+			.medium { 
+				/*I need some CSS codes.*/
+				width: 60%;
+			}
+			.small { 
+				/*I need some CSS codes.*/
+				width: 40%;
+			 }  
         }
 
         @media screen and (max-width: 480px) {
             .news-item header h1 { font-size: 18px; }
-            .medium, .small { 
+			.row { flex-direction: column; }
+            .large, .medium, .small { 
 				/*I need some CSS codes.*/
+				width: 100%;
 			 }
         }
     </style>
@@ -170,7 +199,7 @@ Description : Flex Layouts.
 					<!-- Medium news item -->
 					<div class="medium news-item">
 						<header>
-							<h1>Your Name Takes a Historic Spacewalk Near the ISS</h1>
+							<h1>Xavier Lachance & Rongtao Zhu Take a Historic Spacewalk Near the ISS</h1>
 						</header>
 						<img src="images/medium.jpg" alt="Medium Image">
 						<article>
